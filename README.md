@@ -1,3 +1,14 @@
+This repository contains a Black responsive React Sidebar with toggle feature. It has no errors and is fully functional. 
+
+npm i 
+npm start
+
+To view in your system.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
