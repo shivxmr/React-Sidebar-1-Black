@@ -5,8 +5,7 @@ import {
     FaUserAlt,
     FaRegChartBar,
     FaCommentAlt,
-    FaShoppingBag,
-    FaThList
+    FaShoppingBag
 } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
@@ -26,6 +25,11 @@ const Sidebar = ({ children }) => {
             icon: <FaUserAlt />
         },
         {
+            path: "/settings",
+            name: "Settings",
+            icon: <FaShoppingBag />
+        },
+        {
             path: "/analytics",
             name: "Analytics",
             icon: <FaRegChartBar />
@@ -34,23 +38,13 @@ const Sidebar = ({ children }) => {
             path: "/comment",
             name: "Comment",
             icon: <FaCommentAlt />
-        },
-        {
-            path: "/product",
-            name: "Product",
-            icon: <FaShoppingBag />
-        },
-        {
-            path: "/productList",
-            name: "Product List",
-            icon: <FaThList />
         }
     ]
     return (
         <div className="container">
             <div style={{ width: isOpen ? "200px" : "50px" }} className="sidebar">
                 <div className="top_section">
-                    <h1 style={{ display: isOpen ? "block" : "none" }} className="logo">Logo</h1>
+                    <h1 style={{ display: isOpen ? "block" : "none" }} className="logo">IVR</h1>
                     <div style={{ marginLeft: isOpen ? "50px" : "0px" }} className="bars">
                         <FaBars onClick={toggle} />
                     </div>

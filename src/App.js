@@ -6,8 +6,7 @@ import Dashboard from "./pages/Dashboard.jsx";
 import Users from "./pages/Users.jsx";
 import Analytics from "./pages/Analytics.jsx";
 import Comment from "./pages/Comment.jsx";
-import Product from "./pages/Product.jsx";
-import ProductList from "./pages/ProductList.jsx";
+import Settings from "./pages/Settings.jsx";
 
 const App = () => {
   return (
@@ -19,8 +18,7 @@ const App = () => {
           <Route path="/users" element={<Users />} />
           <Route path="/comment" element={<Comment />} />
           <Route path="/analytics" element={<Analytics />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="/productList" element={<ProductList />} />
+          <Route path="/settings" element={<Settings />} />
         </Routes>
       </Sidebar>
     </BrowserRouter>
